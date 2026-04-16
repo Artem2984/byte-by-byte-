@@ -1,3 +1,4 @@
+// Находим форму и элементы формы
 const form = document.getElementById("signup-form");
 const message = document.getElementById("form-message");
 
@@ -9,6 +10,7 @@ const nameError = document.getElementById("name-error");
 const phoneError = document.getElementById("phone-error");
 const courseError = document.getElementById("course-error");
 
+// Проверка формы
 if (
   form &&
   message &&
@@ -98,6 +100,7 @@ if (
   });
 }
 
+// FAQ
 const questions = document.querySelectorAll(".faq-question");
 
 questions.forEach(function(question) {
@@ -107,6 +110,7 @@ questions.forEach(function(question) {
   });
 });
 
+// Мобильное меню
 const menuToggle = document.getElementById("menu-toggle");
 const headerMenu = document.getElementById("header-menu");
 
@@ -115,6 +119,8 @@ if (menuToggle && headerMenu) {
     headerMenu.classList.toggle("active");
   });
 }
+
+// Закрытие меню после нажатия на ссылку
 const menuLinks = document.querySelectorAll(".nav a");
 
 menuLinks.forEach(function(link) {
